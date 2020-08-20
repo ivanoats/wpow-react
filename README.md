@@ -1,4 +1,5 @@
 # wpow-react
+[![Netlify Status](https://api.netlify.com/api/v1/badges/00c92fa2-1902-43de-8d96-2c1c955c7350/deploy-status)](https://app.netlify.com/sites/wpow-react/deploys)
 
 Empty project.
 
