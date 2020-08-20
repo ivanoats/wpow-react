@@ -1,5 +1,5 @@
 exports.handler = async event => {
-  const conditions = event.queryStringParameters.name || 'KSEA'
+  const conditions = event.queryStringParameters.station || 'KSEA'
 
   return {
     statusCode: 200,
