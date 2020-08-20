@@ -1,9 +1,20 @@
-exports.handler = async event => {
-  const conditions = event.queryStringParameters.station || 'KSEA'
+const got = require('got');
 
-  return {
-    statusCode: 200,
-    body: `conditions for ${conditions}`
+exports.handler = async event => {
+  const station = event.queryStringParameters.station || 'KSEA'
+
+  try {
+    const observations = await got(`https://api.weather.gov/stations/${station}/observations`)
+    return {
+      statusCode: 200,
+      body: observations.body
+    }
+  
+  } catch (error) {
+    return {
+      statusCode: 500,
+      body: error
+    }
   }
 
 }

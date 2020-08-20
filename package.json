@@ -15,11 +15,12 @@
     "start": "webpack-dev-server --hot --mode development"
   },
   "dependencies": {
-    "tailwindcss": "^1.6.2",
+    "got": "^11.5.2",
     "lodash": "^4.17.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-hot-loader": "^4.12.21"
+    "react-hot-loader": "^4.12.21",
+    "tailwindcss": "^1.6.2"
   },
   "devDependencies": {
     "webpack": "^4.44.1",
