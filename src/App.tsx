@@ -12,7 +12,7 @@ class App extends React.Component<Props> {
     const { station } = this.props;
     return (
       <>
-        <h1 className="text-4xl text-white bg-black">
+        <h1 className="p12 text-6xl text-black bg-gray-400">
           Weather for {station}
         </h1>
       </>
